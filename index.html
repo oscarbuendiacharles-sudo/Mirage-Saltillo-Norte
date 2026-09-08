@@ -498,6 +498,13 @@ h3{font-size:clamp(1.15rem,1.7vw,1.45rem);font-weight:600}
 
 /* S7 datos */
 .facts{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding-block:clamp(50px,7vw,80px)}
+.quotes{display:grid;grid-template-columns:1.45fr 1fr;gap:24px;margin-top:42px}
+.quote-card{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:clamp(26px,3vw,34px);display:flex;flex-direction:column}
+.quote-card .stars2{color:#F5B942;font-size:.86rem;letter-spacing:.14em}
+.quote-card blockquote{margin:15px 0 0;font-family:var(--display);font-weight:600;font-size:clamp(1.02rem,1.45vw,1.22rem);line-height:1.46;color:var(--text-primary);flex:1}
+.quote-card .who{margin-top:20px;font-size:.88rem;color:var(--text-secondary)}
+.quote-card .who b{color:var(--text-primary);font-weight:500}
+@media (max-width:860px){.quotes{grid-template-columns:1fr}}
 .facts .rating{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:38px;padding-bottom:32px;border-bottom:1px solid var(--line)}
 .facts .stars{font-family:var(--display);font-weight:700;font-size:clamp(1.6rem,2.6vw,2.2rem);color:var(--text-primary);line-height:1}
 .facts .rating .glyph{color:#F5B942;font-size:1.1rem;letter-spacing:.1em}
@@ -956,7 +963,7 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
     <div class="rating part">
       <span class="glyph" aria-hidden="true">★★★★★</span>
       <span class="stars">4.5</span>
-      <span class="lab">en Google</span>
+      <span class="lab">en Google · 6 opiniones</span>
       <a href="https://maps.google.com/?cid=8121210507906424015" target="_blank" rel="noopener">Ver las reseñas</a>
     </div>
     <div class="grid">
@@ -965,7 +972,19 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
       <div class="fact part"><div class="big">Todo el país</div><p>Refacciones disponibles en México, no traídas de fuera.</p></div>
       <div class="fact part"><div class="big">50 a 70%</div><p>Menos consumo de un equipo inverter contra uno convencional.</p></div>
     </div>
-    <p class="src">Datos públicos de la marca y de pruebas de consumo. Aquí van tus reseñas reales cuando las tengas.</p>
+    <div class="quotes reveal">
+      <figure class="quote-card part">
+        <span class="stars2" aria-label="Cinco de cinco estrellas">★★★★★</span>
+        <blockquote>Gran atención y orientación que otorgan para la elección de mi clima, los precios me parecieron justos y el equipo sigue funcionando sin problemas. Excelente servicio</blockquote>
+        <figcaption class="who"><b>Hector Lozano Gonzalez</b> · Local Guide en Google</figcaption>
+      </figure>
+      <figure class="quote-card part">
+        <span class="stars2" aria-label="Cinco de cinco estrellas">★★★★★</span>
+        <blockquote>Excelente Servicio, 100 % Recomendable</blockquote>
+        <figcaption class="who"><b>Armando Santana</b> · Reseña en Google</figcaption>
+      </figure>
+    </div>
+    <p class="src">Datos públicos de la marca y de pruebas de consumo. Las reseñas son de clientes reales y se pueden comprobar en la ficha de Google.</p>
   </div>
 </section>
 
