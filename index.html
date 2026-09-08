@@ -128,7 +128,12 @@
    "opens": "00:00",
    "closes": "00:00"
   }
- ]
+ ],
+ "geo": {
+  "@type": "GeoCoordinates",
+  "latitude": 25.4521295,
+  "longitude": -100.9791604
+ }
 }
 </script>
 <script type="application/ld+json">
@@ -493,6 +498,12 @@ h3{font-size:clamp(1.15rem,1.7vw,1.45rem);font-weight:600}
 
 /* S7 datos */
 .facts{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding-block:clamp(50px,7vw,80px)}
+.facts .rating{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:38px;padding-bottom:32px;border-bottom:1px solid var(--line)}
+.facts .stars{font-family:var(--display);font-weight:700;font-size:clamp(1.6rem,2.6vw,2.2rem);color:var(--text-primary);line-height:1}
+.facts .rating .glyph{color:#F5B942;font-size:1.1rem;letter-spacing:.1em}
+.facts .rating a{color:var(--accent-text);text-decoration:none;font-size:.95rem;border-bottom:1px solid transparent;transition:border-color .35s var(--ease)}
+.facts .rating a:hover{border-color:var(--accent-text)}
+.facts .rating .lab{font-family:var(--mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--text-secondary)}
 .facts .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(20px,3vw,40px)}
 .fact .big{font-family:var(--display);font-weight:700;font-size:clamp(1.9rem,3.4vw,2.7rem);color:var(--text-primary);line-height:1;font-variant-numeric:tabular-nums}
 .fact p{color:var(--text-secondary);font-size:.92rem;margin-top:12px}
@@ -942,6 +953,12 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
 <!-- ============ S7 datos ============ -->
 <section class="facts">
   <div class="wrap reveal">
+    <div class="rating part">
+      <span class="glyph" aria-hidden="true">★★★★★</span>
+      <span class="stars">4.5</span>
+      <span class="lab">en Google</span>
+      <a href="https://maps.google.com/?cid=8121210507906424015" target="_blank" rel="noopener">Ver las reseñas</a>
+    </div>
     <div class="grid">
       <div class="fact part"><div class="big">1984</div><p>Mirage es mexicana y lleva desde entonces haciendo minisplits.</p></div>
       <div class="fact part"><div class="big">50%</div><p>Más de la mitad del mercado nacional de minisplits es de esta marca.</p></div>
